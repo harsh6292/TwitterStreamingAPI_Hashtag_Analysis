@@ -1,0 +1,16 @@
+Assumptions
+
+1. The variable 'K'
+   I assumed K to be an integer variable which will be used to display the top
+   hashtags. The number of top hashtags that will be displayed are 'K'.
+
+2. The time period or sliding window of time
+   With this I assumed time to be in seconds 's'. When application is running 
+   and 's' seconds are completed, then application will display the top 'K'
+   hashtags. After this, the application will again wait for 's' seconds to
+   be completed before displaying another top 'K' hashtags.
+
+3. I have used TwitterStream.sample() method to stream Tweets. This method
+   captures random tweets from Twitter. All other methods present captures
+   more limited tweets based on some filter. The sample() method captures
+   the maximum real-time tweets from Twitter.
