@@ -14,3 +14,7 @@ Assumptions
    captures random tweets from Twitter. All other methods present captures
    more limited tweets based on some filter. The sample() method captures
    the maximum real-time tweets from Twitter.
+
+4. The last thing that I have considered in the program is to count only
+   those tweets that contains English alphabets (A-Z, a-z and 0-9) and
+   will discard tweets posted in other languages.

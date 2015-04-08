@@ -1,0 +1,7 @@
+Dependencies
+
+The needed dependencies is twitter4j library for this application. The particular
+jar files needed for this application are twitter4j-core-4.0.3.jar and
+twitter4j-stream-4.0.3.jar. The necessary files have been included with the
+project itself under src folder. The compilation and running takes care
+of using these libraries as and when needed.
