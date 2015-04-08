@@ -87,7 +87,7 @@ public class MainClassTwitterStreaming {
 			//so that same hashtags are put in same entry.
 			for(HashtagEntity hashTag : hashTags)
 			{
-				if(hashTag != null)
+				if(hashTag != null && hashTag.getText().matches("[a-zA-Z0-9]+"))
 				{
 					Integer val = 0;	        		
 					if( (val = TagsCount.get(hashTag.getText().toLowerCase())) != null)
@@ -136,7 +136,7 @@ public class MainClassTwitterStreaming {
 					Thread.sleep(seconds*1000);
 				
 					ValueComparator compareByValue =  new ValueComparator(TagsCount);
-					TreeMap<String, Integer> sortedTreeMap = new TreeMap<>(compareByValue);
+					TreeMap<String, Integer> sortedTreeMap = new TreeMap<String, Integer>(compareByValue);
 					sortedTreeMap.putAll(TagsCount);
 					
 					TagsCount.clear();
